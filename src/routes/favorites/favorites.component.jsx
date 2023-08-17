@@ -19,7 +19,7 @@ const Favorites = () => {
           <span>Remove</span>
         </div>
       </div>
-      {favoritesMovies.map((favoriteMovie) => (
+      {favoritesMovies?.map((favoriteMovie) => (
         <FavoritetMovie key={favoriteMovie.id} favoriteMovie={favoriteMovie} />
       ))}
     </div>
