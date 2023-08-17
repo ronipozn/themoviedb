@@ -16,7 +16,7 @@ const MovieCard = ({ movie }) => {
 
   const addMovieHandler = () => addMovieToFavorites(movie);
 
-  const isMovieFavorite = favoritesMovies.find(
+  const isMovieFavorite = favoritesMovies?.find(
     (favoriteMovie) => favoriteMovie.id === id
   );
 
